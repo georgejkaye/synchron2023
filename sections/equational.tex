@@ -1,0 +1,104 @@
+\section{Equational reasoning}
+
+\begin{frame}
+    \frametitle{<title>}
+
+    When do two circuits have the \alert{same behaviour}?
+
+
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Let's get structural}
+
+    \centering
+    \pause
+
+    \((
+        \dsptikzfig{strings/structure/monoid/merge}[colour=white],
+        \dsptikzfig{strings/structure/monoid/init}[colour=white],
+        \dsptikzfig{strings/structure/comonoid/copy}[colour=white],
+        \dsptikzfig{strings/structure/comonoid/discard}[colour=white]
+    )\) is a \alert{bialgebra}.
+
+    \pause
+
+    \begin{minipage}{0.21\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/monoid/unitality-l-lhs}
+            =
+            \dsptikzfig{strings/structure/monoid/unitality-l-rhs}
+        \end{equation*}
+    \end{minipage}
+    \quad
+    \begin{minipage}{0.26\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/monoid/associativity-lhs}
+            =
+            \dsptikzfig{strings/structure/monoid/associativity-rhs}
+        \end{equation*}
+    \end{minipage}
+    \quad
+    \begin{minipage}{0.26\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/monoid/commutativity-lhs}
+            =
+            \dsptikzfig{strings/structure/monoid/commutativity-rhs}
+        \end{equation*}
+    \end{minipage}
+
+    \begin{minipage}{0.21\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/comonoid/unitality-l-lhs}
+            =
+            \dsptikzfig{strings/structure/comonoid/unitality-l-rhs}
+        \end{equation*}
+    \end{minipage}
+    \quad
+    \begin{minipage}{0.26\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/comonoid/associativity-lhs}
+            =
+            \dsptikzfig{strings/structure/comonoid/associativity-rhs}
+        \end{equation*}
+    \end{minipage}
+    \quad
+    \begin{minipage}{0.26\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/comonoid/commutativity-lhs}
+            =
+            \dsptikzfig{strings/structure/comonoid/commutativity-rhs}
+        \end{equation*}
+    \end{minipage}
+
+    \begin{minipage}{0.28\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/bialgebra/merge-copy-lhs}
+            =
+            \dsptikzfig{strings/structure/bialgebra/merge-copy-rhs}
+        \end{equation*}
+    \end{minipage}
+    \begin{minipage}{0.23\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/bialgebra/init-copy-lhs}
+            =
+            \dsptikzfig{strings/structure/bialgebra/init-copy-rhs}
+        \end{equation*}
+    \end{minipage}
+    \begin{minipage}{0.23\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/bialgebra/merge-discard-lhs}
+            =
+            \dsptikzfig{strings/structure/bialgebra/merge-discard-rhs}
+        \end{equation*}
+    \end{minipage}
+    \begin{minipage}{0.2\textwidth}
+        \begin{equation*}
+            \dsptikzfig{strings/structure/bialgebra/init-discard-lhs}
+            =
+            \dsptikzfig{strings/structure/bialgebra/init-discard-rhs}
+        \end{equation*}
+    \end{minipage}
+\end{frame}

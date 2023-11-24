@@ -183,7 +183,7 @@
     (but this is to be expected!)
 \end{frame}
 \begin{frame}
-    \frametitle{Circuits are causal and monotone}
+    \frametitle{Restricting the stream functions}
 
     \pause
     \Large
@@ -291,4 +291,26 @@
         if and only if it is \textbf{causal}, \textbf{monotone} and has
         \textbf{finitely many stream derivatives}.
     \end{theorem}
+\end{frame}
+\begin{frame}
+    \frametitle{The correspondence}
+
+    \centering
+
+    \begin{tikzcd}[ampersand replacement=\&,row sep=large]
+        \&
+        \text{Circuits}
+        \arrow{dl}
+        \arrow{dr}
+        \&
+        \\
+        \text{Stream functions}
+        \arrow[bend left]{ur}
+        \arrow{rr}
+        \&
+        \&
+        \text{Mealy machines}
+        \arrow[bend right]{ul}
+        \arrow[bend left]{ll}
+    \end{tikzcd}
 \end{frame}
