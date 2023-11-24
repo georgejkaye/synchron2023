@@ -1,11 +1,19 @@
+\usepackage{figures/tikzit}
 \usepackage{graphicx}
+\usepackage{svg}
 \usepackage{amssymb}
 \usepackage{xparse}
+\usepackage{stmaryrd}
+
+\newcommand{\svg}[3]{\raisebox{#1em}{\scalebox{#2}{\includesvg{imgs/#3}}}}
 
 \input{macros/sets}
 \input{macros/category}
 \input{macros/circuits}
 \input{macros/streams}
+
+\input{figures/circuits.tikzdefs}
+\input{figures/circuits.tikzstyles}
 
 \graphicspath{{./imgs/}}
 
@@ -62,4 +70,11 @@
 
 \begin{document}
     \maketitle
+    \input{sections/intro}
+    \input{sections/syntax}
+    \input{sections/semantics}
+    \input{sections/mealy}
+    \input{sections/equational}
+    \input{sections/operational}
+    \input{sections/graphs}
 \end{document}
