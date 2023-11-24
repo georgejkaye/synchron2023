@@ -1,0 +1,65 @@
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{xparse}
+
+\input{macros/sets}
+\input{macros/category}
+\input{macros/circuits}
+\input{macros/streams}
+
+\graphicspath{{./imgs/}}
+
+\usetheme[
+  background=light,
+  numbering=counter,
+  block=fill,
+  %sectionpage=simple
+]{metropolis}
+
+% FiraFonts
+\usepackage[sfdefault]{FiraSans}
+\usepackage{FiraMono}
+% Use thinner fonts
+\makeatletter
+\def\bfseries@sf{medium}
+\def\mdseries@sf{l}
+\makeatother
+
+\definecolor{backg}{RGB}{9,72,61}
+\definecolor{accent}{RGB}{0,150,136}
+
+\definecolor{dracback}{RGB}{40, 42, 54}
+\definecolor{dracfore}{RGB}{248, 248, 242}
+\definecolor{dractitle}{RGB}{56, 58, 89}
+\definecolor{dracblock}{RGB}{98, 114, 164}
+\definecolor{draccent}{RGB}{255, 121, 198}
+
+\setbeamercolor{normal text}{bg=dracfore}
+\setbeamercolor{frametitle}{bg=dractitle, fg=dracfore}
+\setbeamercolor{title separator}{fg=draccent}
+\setbeamercolor{progress bar}{fg=draccent, bg=draccent}
+\setbeamercolor{block title}{fg=dracfore, bg=dracblock}
+\setbeamercolor{alerted text}{fg=draccent}
+
+\newtheorem{axiom}{Axiom(s)}
+
+\title{A Fully Compositional Theory of Digital Circuits}
+\author{
+    \texorpdfstring{
+        \large\textbf{George Kaye} \\[0.25em]
+        \footnotesize University of Birmingham
+    }{
+        George Kaye
+    }
+}
+\date{
+    \texorpdfstring{
+        27 October 2023 -- SYNCHRON 2023
+    }{
+        27 October 2023
+    }
+}
+
+\begin{document}
+    \maketitle
+\end{document}
