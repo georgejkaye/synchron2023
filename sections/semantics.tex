@@ -296,21 +296,22 @@
     \frametitle{The correspondence}
 
     \centering
+    \Large
 
     \begin{tikzcd}[ampersand replacement=\&,row sep=large]
         \&
         \text{Circuits}
-        \arrow{dl}
-        \arrow{dr}
+        \arrow[visible on=<2->]{dl}
+        \arrow[visible on=<3->]{dr}
         \&
         \\
         \text{Stream functions}
-        \arrow[bend left]{ur}
-        \arrow{rr}
+        \arrow[visible on=<5->,bend left]{ur}
+        \arrow[visible on=<4->]{rr}
         \&
         \&
         \text{Mealy machines}
-        \arrow[bend right]{ul}
-        \arrow[bend left]{ll}
+        \arrow[visible on=<5->,bend right]{ul}
+        \arrow[visible on=<4->,bend left]{ll}
     \end{tikzcd}
 \end{frame}
