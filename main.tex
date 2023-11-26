@@ -1,12 +1,20 @@
 \usepackage{figures/tikzit}
 \usepackage{graphicx}
-\usepackage{svg}
+\usepackage[inkscapelatex=false]{svg}
 \usepackage{amssymb}
 \usepackage{xparse}
 \usepackage{stmaryrd}
 \usepackage{tikz-cd}
 
 \newcommand{\svg}[3]{\raisebox{#1em}{\scalebox{#2}{\includesvg{imgs/#3}}}}
+
+\tikzset{
+    invisible/.style={opacity=0},
+    visible on/.style={alt={#1{}{invisible}}},
+    alt/.code args={<#1>#2#3}{%
+        \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}}%
+    }
+}
 
 \input{macros/sets}
 \input{macros/category}
@@ -77,8 +85,25 @@
     \input{sections/intro}
     \input{sections/syntax}
     \input{sections/semantics}
-    \input{sections/mealy}
-    \input{sections/equational}
     \input{sections/operational}
     \input{sections/graphs}
+
+    \begin{frame}
+        \frametitle{Conclusion}
+
+        We have developed a \alert{compositional framework} for digital circuits
+
+        \pause
+
+        We have an \alert{operational semantics} for digital circuits
+
+        \pause
+
+        We can model this using \alert{graph rewrites} on \alert{hypergraphs}
+
+        \pause
+
+        This has been \alert{implemented} in a hardware description language
+
+    \end{frame}
 \end{document}

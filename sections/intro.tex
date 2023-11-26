@@ -33,67 +33,35 @@
     \normalsize
 
     \pause
-    \includesvg{imgs/f}
+    \dsptikzfig{strings/category/f}[box=F,colour=seq]
     \pause
     \quad
-    \includesvg{imgs/g}
+    \dsptikzfig{strings/category/f}[box=G,colour=seq]
     \pause
     \quad
-    \includesvg{imgs/h}
+    \dsptikzfig{strings/category/f-2-2}[box=H,colour=seq]
 
     \pause
     \vspace{1em}
 
-    \raisebox{2em}{\includesvg{imgs/seq}}
+    \dsptikzfig{strings/category/seq}[box1=F,box2=G,colour=seq]
     \quad
-    \includesvg{imgs/par}
+    \dsptikzfig{strings/monoidal/tensor}[box1=F,box2=G,colour=seq]
     \quad
-    \raisebox{2em}{\includesvg{imgs/trace}}
+    \dsptikzfig{strings/traced/trace-rhs}[box=H,colour=seq]
 
 \end{frame}
-\begin{frame}
-    \frametitle{But why do we want that?}
-    \centering
-    \LARGE
-    We want to reason \alert{equationally} about circuits.
 
-    \normalsize
-    \vspace{2em}
-
-    \pause
-
-    \svg{-0.5}{0.5}{f}
-    \quad
-    \pause
-    \(=\)
-    \quad
-    \svg{-2}{0.5}{rewrite-l}
-    \quad
-    \pause
-    \(\rightsquigarrow\)
-    \quad
-    \svg{-2}{0.5}{rewrite-r}
-    \quad
-    \pause
-    \(=\)
-    \quad
-    \svg{-0.5}{0.5}{g}
-
-\end{frame}
 \begin{frame}
     \frametitle{Why all the pictures?}
     \centering
 
-    \Huge
+    \LARGE
+    We want to reason \alert{equationally} about circuits.
 
-    \only<3>{
-        \svg{0}{1.25}{string-crossed}
-        \[F \seq \sigma \seq \id \tensor G \seq \sigma \seq H\]
-    }%
-    \only<4->{
-        \svg{0}{1.25}{string-uncrossed}
-        \[F \seq G \tensor \id \seq H\]
-    }%
+    \pause
+
+    Using \alert{string diagrams} removes much of the bureacracy
 
 \end{frame}
 \begin{frame}
