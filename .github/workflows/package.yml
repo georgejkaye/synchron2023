@@ -14,11 +14,12 @@ jobs:
         with:
           submodules: recursive
       - name: Package the presentation slides
-        uses: georgejkaye/latex-packager@v1.0
+        uses: georgejkaye/latex-packager@v1.1
         with:
           input-dir: .
           main: main-presentation
           project-name: main-presentation
+          shell-escape: true
       - name: Package the static slides
         uses: georgejkaye/latex-packager@v1.0
         with:
